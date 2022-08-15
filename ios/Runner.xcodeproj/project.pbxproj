@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1266EFA728AA4DDB00C9DAED /* librand.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1266EFA528AA4A1200C9DAED /* librand.a */; };
 		129F354328AA3D47008F1437 /* libadder.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 129F354228AA3D3B008F1437 /* libadder.a */; };
 		1498D2341E8E89220040F4C2 /* GeneratedPluginRegistrant.m in Sources */ = {isa = PBXBuildFile; fileRef = 1498D2331E8E89220040F4C2 /* GeneratedPluginRegistrant.m */; };
 		3B3967161E833CAA004F5970 /* AppFrameworkInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3B3967151E833CAA004F5970 /* AppFrameworkInfo.plist */; };
@@ -32,6 +33,8 @@
 
 /* Begin PBXFileReference section */
 		029FF9446F6CC5FE78B92493 /* Pods_Runner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Runner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1266EFA428AA49F400C9DAED /* ios */ = {isa = PBXFileReference; lastKnownFileType = folder; path = ios; sourceTree = "<group>"; };
+		1266EFA528AA4A1200C9DAED /* librand.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = librand.a; path = ../packages/randomizer/ios/libs/librand.a; sourceTree = "<group>"; };
 		129F354128AA3D04008F1437 /* adder.dart */ = {isa = PBXFileReference; lastKnownFileType = text; name = adder.dart; path = ../packages/adder/lib/adder.dart; sourceTree = "<group>"; };
 		129F354228AA3D3B008F1437 /* libadder.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libadder.a; path = ../packages/adder/ios/libs/libadder.a; sourceTree = "<group>"; };
 		12B1E94728A3992F00ECA476 /* libadder.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libadder.a; path = ../../../Downloads/libadder.a; sourceTree = "<group>"; };
@@ -61,6 +64,7 @@
 			files = (
 				129F354328AA3D47008F1437 /* libadder.a in Frameworks */,
 				988BA6544768779F9CCB829F /* Pods_Runner.framework in Frameworks */,
+				1266EFA728AA4DDB00C9DAED /* librand.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -125,6 +129,8 @@
 		D5DC6E7AB23ECFC05A0C1511 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1266EFA528AA4A1200C9DAED /* librand.a */,
+				1266EFA428AA49F400C9DAED /* ios */,
 				129F354228AA3D3B008F1437 /* libadder.a */,
 				129F354128AA3D04008F1437 /* adder.dart */,
 				12C06A0828A2AE1100091368 /* libadder.a */,

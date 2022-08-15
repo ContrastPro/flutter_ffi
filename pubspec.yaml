@@ -34,6 +34,8 @@ dependencies:
 
   adder:
     path: packages/adder
+  randomizer:
+    path: packages/randomizer
 
 dev_dependencies:
   flutter_test:

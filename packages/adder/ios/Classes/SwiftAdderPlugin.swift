@@ -12,8 +12,7 @@ public class SwiftAdderPlugin: NSObject, FlutterPlugin {
     result("iOS " + UIDevice.current.systemVersion)
   }
 
-  public func dummyMethodToEnforceBundling() {
-    // call some function from our static lib
-    add(40, 2)
+  public static func dummyMethodToEnforceBundling() {
+    add(60, 9)
   }
 }

@@ -2,20 +2,26 @@ PODS:
   - adder (0.0.1):
     - Flutter
   - Flutter (1.0.0)
+  - randomizer (0.0.1):
+    - Flutter
 
 DEPENDENCIES:
   - adder (from `.symlinks/plugins/adder/ios`)
   - Flutter (from `Flutter`)
+  - randomizer (from `.symlinks/plugins/randomizer/ios`)
 
 EXTERNAL SOURCES:
   adder:
     :path: ".symlinks/plugins/adder/ios"
   Flutter:
     :path: Flutter
+  randomizer:
+    :path: ".symlinks/plugins/randomizer/ios"
 
 SPEC CHECKSUMS:
   adder: 3f3b6e6c36679953ac4b420c4373359cdaf2d738
   Flutter: 50d75fe2f02b26cc09d224853bb45737f8b3214a
+  randomizer: e8cb044a53f617d4360f20b0a3215bf93c2d46fb
 
 PODFILE CHECKSUM: 24230938bff8832c780037720316bc03da7ad225
 

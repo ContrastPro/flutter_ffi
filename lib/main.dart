@@ -1,9 +1,11 @@
 import 'package:adder/adder.dart';
+import 'package:randomizer/randomizer.dart';
 import 'package:flutter/material.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
   Adder.instance.ensureInitialized();
+  Randomizer.instance.ensureInitialized();
   runApp(const MyApp());
 }
 
@@ -38,12 +40,15 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
   static const Adder _adder = Adder.instance;
+  static const Randomizer _randomizer = Randomizer.instance;
 
   int _counter = 0;
+  int _random = 0;
 
-  void _incrementCounter() {
+  void _getValues() {
     setState(() {
       _counter = _adder.add(_counter, 1);
+      _random = _randomizer.random();
     });
   }
 
@@ -64,11 +69,21 @@ class _MyHomePageState extends State<MyHomePage> {
               '$_counter',
               style: Theme.of(context).textTheme.headline4,
             ),
+            const SizedBox(
+              height: 32.0,
+            ),
+            const Text(
+              'Random value:',
+            ),
+            Text(
+              '$_random',
+              style: Theme.of(context).textTheme.headline4,
+            ),
           ],
         ),
       ),
       floatingActionButton: FloatingActionButton(
-        onPressed: _incrementCounter,
+        onPressed: _getValues,
         tooltip: 'Increment',
         child: const Icon(Icons.add),
       ),
